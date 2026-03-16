@@ -1,4 +1,41 @@
-# .gitignore (位于 Probability_Theory/ 目录下)
-99_Resources/*.pdf
-99_Resources/*.zip
-99_Resources/*.pptx
+# ==========================================
+# 1. 操作系统生成的临时文件
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# 2. 编辑器与 IDE 配置
+# ==========================================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# 3. 编程语言编译与运行产生的文件 (针对 42_Code_Workspace)
+# ==========================================
+# Java 
+*.class
+*.jar
+*.war
+/bin/
+/out/
+/target/
+
+# ==========================================
+# 4. 知识库专属拦截规则
+# ==========================================
+# 忽略 99_Resources 下的所有大型原始文件，但保留文件夹结构本身
+99_Resources/**/*.pdf
+99_Resources/**/*.ppt
+99_Resources/**/*.pptx
+99_Resources/**/*.doc
+99_Resources/**/*.docx
+99_Resources/**/*.mp4
+99_Resources/**/*.zip
+99_Resources/**/*.rar
